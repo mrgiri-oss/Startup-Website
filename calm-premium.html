@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Karo Pitch</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+
+<div class="cursor-glow" id="glow"></div>
+
+<!-- NAVBAR -->
+
+<nav class="navbar flex justify-between items-center px-4 md:px-12 py-4 md:py-6 sticky top-0 z-50">
+
+<h1 class="text-2xl font-bold text-purple-400">
+Karo Pitch
+</h1>
+
+<!-- DESKTOP MENU -->
+<div class="hidden md:flex gap-8 text-gray-300">
+
+<a href="#about" class="nav-link">About</a>
+<a href="#process" class="nav-link">How it Works</a>
+<a href="#startups" class="nav-link">Startups</a>
+<a href="#investors" class="nav-link">Investors</a>
+
+</div>
+
+<a href="#apply" class="nav-cta-btn hidden md:block">
+<span>Apply</span>
+</a>
+
+<!-- HAMBURGER -->
+<div class="md:hidden">
+<button id="menuBtn" class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+
+<a href="#about">About</a>
+<a href="#process">How it Works</a>
+<a href="#startups">Startups</a>
+<a href="#investors">Investors</a>
+<a href="#apply" class="mobile-cta">Apply</a>
+
+</div>
+<div id="overlay" class="overlay"></div>
+
+<!-- HERO -->
+
+<section id="about" class="reveal grid md:grid-cols-2 gap-8 md:gap-12 items-center px-4 md:px-12 py-16 md:py-24 grid-bg">
+
+<div>
+
+<p class="powered powered-text mb-4 font-semibold">
+Powered by KaroStartup
+</p>
+
+<h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-reveal reveal">
+<span>Pitch Your Startup</span><br>
+<span>to India's Top Investors</span>
+</h1>
+
+
+<p class="text-gray-400 mb-8 max-w-lg">
+Karo Pitch connects founders across India with investors.
+A trusted platform where startups present their ideas,
+gain visibility, and raise funding.
+</p>
+
+<div class="flex flex-col sm:flex-row gap-4">
+
+<a href="#apply" class="glow-btn bg-purple-500 px-8 py-3 rounded-lg">
+Apply to Pitch
+</a>
+
+<button class="glow-btn border border-gray-500 px-8 py-3 rounded-lg">
+Explore Startups
+</button>
+
+</div>
+
+</div>
+
+<img class="hidden md:block rounded-xl shadow-xl hero-parallax"
+src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop">
+
+</section>
+
+<!-- STATS -->
+
+<section id="stats" class="mpy-20 text-center grid-bg reveal">
+
+<h2 class="text-3xl font-bold mb-12">
+Platform Impact
+</h2>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 px-4 max-w-5xl mx-auto text-center">
+
+<div class="stat-card">
+<h3 class="stat-number counter" data-target="120">0</h3>
+<div class="stat-line"></div>
+<p class="text-gray-400">Startups Funded</p>
+</div>
+
+<div class="stat-card">
+<h3 class="stat-number counter" data-target="85">0</h3>
+<div class="stat-line"></div>
+<p class="text-gray-400">Active Investors</p>
+</div>
+
+<div class="stat-card">
+<h3 class="stat-number counter" data-target="320">0</h3>
+<div class="stat-line"></div>
+<p class="text-gray-400">Pitch Decks Reviewed</p>
+</div>
+
+<div class="stat-card">
+<h3 class="stat-number counter" data-target="45">0</h3>
+<div class="stat-line"></div>
+<p class="text-gray-400">Successful Exits</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- INVESTORS -->
+
+<section id="investors" class=" reveal py-28 text-center">
+
+<h3 class="text-gray-400 text-lg font-semibold mb-14">
+Trusted by founders and investors across India
+</h3>
+
+<div class="grid grid-cols-2 md:grid-cols-5 gap-12 max-w-5xl mx-auto">
+
+<div class="logo-card">
+<img src="https://logo.clearbit.com/sequoiacap.com" onerror="this.src='https://dummyimage.com/120x40/111/fff&text=Sequoia'">
+</div>
+
+<div class="logo-card">
+<img src="https://logo.clearbit.com/accel.com" onerror="this.src='https://dummyimage.com/120x40/111/fff&text=Accel'">
+</div>
+
+<div class="logo-card">
+<img src="https://logo.clearbit.com/ycombinator.com" onerror="this.src='https://dummyimage.com/120x40/111/fff&text=YC'">
+</div>
+
+<div class="logo-card">
+<img src="https://logo.clearbit.com/softbank.com" onerror="this.src='https://dummyimage.com/120x40/111/fff&text=SoftBank'">
+</div>
+
+<div class="logo-card">
+<img src="https://logo.clearbit.com/a16z.com" onerror="this.src='https://dummyimage.com/120x40/111/fff&text=a16z'">
+</div>
+
+</div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section id="process" class="reveal py-32 px-4 md:px-12 text-center grid-bg">
+
+<h2 class="text-4xl font-bold mb-8">
+How Karo Pitch Works
+</h2>
+
+<p class="text-gray-400 max-w-xl mx-auto mb-20">
+Karo Pitch creates a simple path for founders to connect with investors and raise funding.
+</p>
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-12">
+
+<div class="card process-card reveal p-10 rounded-xl text-left">
+<div class="text-purple-400 text-3xl font-bold mb-4">01</div>
+<h3 class="text-xl font-semibold mb-3">Apply</h3>
+<p class="text-gray-400">
+Submit your startup details and pitch deck.
+</p>
+</div>
+
+<div class="card process-card reveal p-10 rounded-xl text-left">
+<div class="text-purple-400 text-3xl font-bold mb-4">02</div>
+<h3 class="text-xl font-semibold mb-3">Shortlist</h3>
+<p class="text-gray-400">
+Promising startups are selected by the team.
+</p>
+</div>
+
+<div class="card process-card reveal p-10 rounded-xl text-left">
+<div class="text-purple-400 text-3xl font-bold mb-4">03</div>
+<h3 class="text-xl font-semibold mb-3">Pitch</h3>
+<p class="text-gray-400">
+Present your startup live to investors.
+</p>
+</div>
+
+<div class="card process-card reveal p-10 rounded-xl text-left">
+<div class="text-purple-400 text-3xl font-bold mb-4">04</div>
+<h3 class="text-xl font-semibold mb-3">Raise Funding</h3>
+<p class="text-gray-400">
+Secure capital and grow your startup.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURED STARTUPS -->
+
+<section id="startups" class="reveal py-32 px-4 md:px-12 max-w-7xl mx-auto">
+
+<h2 class="text-4xl font-bold text-center mb-16">
+Featured Startups
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="card reveal p-8 rounded-xl">
+
+<img class="rounded-lg mb-4"
+src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop">
+
+<h3 class="text-xl font-semibold">
+Snackly
+</h3>
+
+<p class="text-gray-400 mt-2">
+Healthy snack brand for modern consumers.
+</p>
+
+</div>
+
+<div class="card reveal p-8 rounded-xl">
+
+<img class="rounded-lg mb-4"
+src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop">
+
+<h3 class="text-xl font-semibold">
+FactoryAI
+</h3>
+
+<p class="text-gray-400 mt-2">
+AI automation for manufacturing.
+</p>
+
+</div>
+
+<div class="card reveal p-8 rounded-xl">
+
+<img class="rounded-lg mb-4"
+src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop">
+
+<h3 class="text-xl font-semibold">
+GreenFuel
+</h3>
+
+<p class="text-gray-400 mt-2">
+Clean energy innovation startup.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="py-32 reveal px-4 md:px-12 text-center grid-bg overflow-hidden">
+
+<h2 class="text-4xl font-bold mb-16">
+What Investors Say
+</h2>
+
+<div class="marquee">
+
+<div class="marquee-track">
+
+<!-- GROUP 1 -->
+<div class="marquee-group">
+
+<div class="testimonial">
+<p>“Karo Pitch is one of the most promising startup discovery platforms in India.”</p>
+<span>Angel Investor</span>
+</div>
+
+<div class="testimonial">
+<p>“A fantastic platform for founders to showcase innovation and raise capital.”</p>
+<span>VC Partner</span>
+</div>
+
+<div class="testimonial">
+<p>“We discovered some incredible early-stage startups here.”</p>
+<span>Startup Mentor</span>
+</div>
+
+<div class="testimonial">
+<p>“We found high-potential startups within weeks. The quality is impressive.”</p>
+<span>Seed Investor</span>
+</div>
+
+<div class="testimonial">
+<p>“Karo Pitch simplifies startup discovery like never before.”</p>
+<span>Venture Capitalist</span>
+</div>
+
+<div class="testimonial">
+<p>“A powerful platform for early-stage founders to gain visibility.”</p>
+<span>Startup Advisor</span>
+</div>
+
+</div>
+
+<!-- GROUP 2 (EXACT DUPLICATE) -->
+<div class="marquee-group">
+
+<div class="testimonial">
+<p>“Karo Pitch is one of the most promising startup discovery platforms in India.”</p>
+<span>Angel Investor</span>
+</div>
+
+<div class="testimonial">
+<p>“A fantastic platform for founders to showcase innovation and raise capital.”</p>
+<span>VC Partner</span>
+</div>
+
+<div class="testimonial">
+<p>“We discovered some incredible early-stage startups here.”</p>
+<span>Startup Mentor</span>
+</div>
+
+<div class="testimonial">
+<p>“We found high-potential startups within weeks. The quality is impressive.”</p>
+<span>Seed Investor</span>
+</div>
+
+<div class="testimonial">
+<p>“Karo Pitch simplifies startup discovery like never before.”</p>
+<span>Venture Capitalist</span>
+</div>
+
+<div class="testimonial">
+<p>“A powerful platform for early-stage founders to gain visibility.”</p>
+<span>Startup Advisor</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CTA -->
+
+<section id="apply" class="reveal py-32 px-4 md:px-12 relative overflow-hidden bg-gradient-to-r from-purple-600 to-indigo-600">
+
+<!-- BACKGROUND GLOW ORBS -->
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-16 relative z-10">
+
+<!-- LEFT -->
+<div>
+<h2 class="text-5xl font-bold mb-6 leading-tight">
+Ready to Pitch Your Startup?
+</h2>
+
+<p class="mb-10 text-lg text-white/90 max-w-md">
+Apply today and showcase your startup to top investors across India.
+</p>
+
+<button class="cta-btn-pro">
+<span>Apply Now</span>
+</button>
+</div>
+
+<!-- RIGHT -->
+<div class="relative hidden md:block">
+
+<div class="cta-card-pro">
+
+<h3 class="text-xl font-semibold mb-2">Your Pitch</h3>
+<p class="text-sm text-gray-300 mb-6">AI-powered startup deck</p>
+
+<!-- animated bars -->
+<div class="bar bar1"></div>
+<div class="bar bar2"></div>
+<div class="bar bar3"></div>
+
+<!-- live stat -->
+<div class="mt-6 text-sm text-gray-300">
+🔥 <span id="liveCount">128</span> startups funded this month
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div id="activity-popup" class="activity-popup"></div>
+
+<button id="themeToggle" class="theme-toggle">
+<span class="icon">🌙</span>
+</button>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
