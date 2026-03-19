@@ -55,6 +55,7 @@ Simulate a real-world startup platform
 Showcase development skills for internships & recruiters
 
 📂 Project Structure
+
 /project-root
 │── index.html
 │── style.css
@@ -79,6 +80,10 @@ Manas Ranjan Giri
 Frontend Developer
 
 ⭐ Show Your Support
+
+link: https://mrgiri-oss.github.io/Startup-Website/
+
+      https://startup-website-three.vercel.app/
 
 If you like this project, consider giving it a ⭐ on GitHub!
 
